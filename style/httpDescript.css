@@ -1,0 +1,68 @@
+.protocol-descript{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.http-btns-div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.httpContainer{
+    display: flex;
+    flex-direction: column;
+}
+
+.btnDiv{
+    padding: 10px;
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.btnDiv > img{
+    width: 100px;
+}
+
+.descriptiondiv{
+    min-height: 500px;
+    padding: 20px 0px;
+    margin-bottom: 30px;
+    background-color: white;
+    box-shadow: 2px 2px #cfcfcf;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.descriptTitle-div{
+    width: 100%;
+    background-color: #005C99;
+    padding: 10px 0px;
+    color: white;
+}
+
+.descriptTitle-div > h3, .descriptiondiv > h4{
+    margin-left: 10px;
+}
+
+.descriptiondiv > p{
+    margin-left: 20px;
+}
+
+#layersImg{
+    width: 500px;
+}
+
+#dataTransferImg{
+    width: 900px;
+}
+
+#multiplexImg{
+    width: 700px;
+}
+
+

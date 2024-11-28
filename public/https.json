@@ -1,0 +1,32 @@
+[
+    {
+        "name":"HTTP/1.1",
+        "dataType":"Podaci se prenose kao nizovi znakova.",
+        "transport":"Uspostavlja se TCP/IP veza između klijenta i poslužitelja. Svaka veza predstavlja jedan tok podataka.",
+        "multiplex":"Response queuing (serijalizacija odgovora - FIFO) i  head-of-line (HoL) blokiranja (prekoračenje maksimalnog broja konekcija jednog klijenta i poslužitelja).",
+        "header" :"Metapodaci uvijek se šalju kao običan tekst i dodaju od 500 do 800 bajtova overheada po requestu, a ponekad i više ako se koriste kolačići.",
+        "security":"Napad umetanjem zaglavlja.",
+        "images":["layers.png","http1connection.png","http1vshttp2.png"],
+        "moreInfo":"/"
+    },
+    {
+        "name":"HTTP/2",
+        "dataType":"Podaci za prijenos su podijeljeni u binarne okvire. Svaki okvir sadrži zaglavlje okvira i okvir podataka. Također svaki okvir je određen ID-om toka.",
+        "transport":"Uspostavlja se TCP/IP veza između klijenta i poslužitelja. Jedna TCP veza može se koristiti za slanje HTTP zahtjeva samo jednom poslužitelju. Unutar veze je moguće otvoriti više tokova podataka s jedinstvenim ID toka. Svi okviri iz više tokova šalju se asinkrono. Poslužitelj također šalje odgovore asinkrono.",
+        "multiplex":"Paralelno i isprepleteno slanje više zahtjeva bez blokiranja. Paralelno i isprepleteno slanje više slanje odgovora bez blokiranja. Definira se razina prioriteta i međusobna ovisnost tokova - stablo prioriteta.",
+        "header" :"Uvodi HPACK algoritam komprimiranja zaglavlja zahtjeva. Sastoji se od  dvije metode: Kompresija podataka i Izbjegavanje višestrukog prijenosa podataka (statička i dinamička tablica).",
+        "security":"Onemogućava napad umetanjem zaglavlja. Sigurnosni nedostaci su: Sporo čitanje, HPACK bomba, Napad ciklusa ovisnosti, Zloupotreba multipleksiranja toka.",
+        "images":["layers.png","http2connection.png","http1vshttp2.png"],
+        "moreInfo":"Poslužitelj može poslati više odgovora na jedan zahtjev klijenta. Temeljem prvog zahtjeva poslužitelj anticipira sljedeće zahtjeve klijenta. Posljedica je ubrzavanje prijenosa resursa."
+    },
+    {
+        "name":"HTTP/3",
+        "dataType":"QUIC (Quick UDP Internet Connections) protokol za prijenos podataka.",
+        "transport":"Koristi UDP umjesto TCP. Brže uspostavljanje veze i smanjenje latencije. Stabilan prijenos podataka kod migracija veze.",
+        "multiplex":"/",
+        "header" :"/",
+        "security":"Veća sigurnost: koristi TLS 1.3",
+        "images":["layers.png"],
+        "moreInfo":"Zahtijeva poslužitelje i mrežne uređaje koji podržavaju QUIC."
+    }
+]

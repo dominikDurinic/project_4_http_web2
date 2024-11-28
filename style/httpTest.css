@@ -1,0 +1,37 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    min-height: 100vh;
+}
+
+h1,h2,h3,p{
+    margin: 0px;
+}
+
+.color-blue{
+    color: #005B9B;
+    text-shadow: 2px 1px gray;
+}
+.color-white{
+    color: white;
+}
+
+.bold-text{
+    font-weight: bold;
+}
+
+.italic-text{
+    font-style: italic;
+}
+
+.selected{
+    background-color: white;
+    box-shadow: 1px 0.5px 2px 1px #cfcfcf;
+    opacity: 1 !important;
+    box-shadow: 2px 2px #cfcfcf;
+}
+
+.blank{
+    width: 5px !important;
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image" href="public/image/logo.png" />
+    <link rel="stylesheet" type="text/css" href="style/httpTest.css">
+    <link rel="stylesheet" type="text/css" href="style/header.css">
+    <link rel="stylesheet" type="text/css" href="style/main.css">
+    <link rel="stylesheet" type="text/css" href="style/httpDescript.css">
+    <link rel="stylesheet" type="text/css" href="style/footer.css">
+    <title>HTTP Tester</title>
+</head>
+<body>
+    <header>
+        <img src="/public/image/logo2.png" alt="logo" class="img-logo"/>
+        <h1><span class="color-blue">HTTP</span> <span class="color-white">Test</span></h1>
+    </header>
+    <main>
+        <div class="main-container">
+            <div class="welcome-div">
+                <h1>HTTP Test</h1>
+                <h2>Dobrodošli u aplikaciju za ispitivanje načina rada i performansi HTTP protokola!</h2>
+                <p>Ispitujemo razlike performansa u pogledu <span class="bold-text">brzine prijenosa datoteka</span> verzije protokola <span class="bold-text">HTTP/2</span> i <span class="bold-text">HTTP/3</span> u odnosu na starije verzije istoimenog protokola <span class="bold-text">HTTP/1.x</span> aplikacijskog sloja.</p>    
+            </div>
+            <div class="protocol-descript">
+                <h2>O protokolu</h2>
+                <p><span class="bold-text">HTTP (Hypertext Transfer Protocol)</span> je protokol aplikacijskog sloja u modelu skupa internetskih protokola za distribuirane, suradničke, hipermedijske informacijske sustave.</p>
+                <p>Osnova funkcioniranja se temelji na modelu <span class="bold-text">zahtjev - odgovor</span> između klijenta  i poslužitelja.</p>
+                <p>Također bitno je naglasiti da je ovaj protokol <span class="bold-text">"stateless"</span> odnosno ne čuva stanje i zahtjevi su međusobno nezavisni.</p>
+                <h2>Opis protokola</h2>
+                <p class="italic-text">Pritiskom na pojedinu verziju protokola ispisuju se glavne karakteristike odabrane verzije HTTP protokola.</p>
+                <div class="httpContainer">
+                    <div class="http-btns-div">
+                        <div class="btnDiv selected" id="http1btn" onclick="selectBtn(1)"><img src="/public/image/http1.png" alt="http1 logo"/></div>
+                        <div class="btnDiv" id="http2btn" onclick="selectBtn(2)"><img src="/public/image/http2.png" alt="http2 logo"/></div>
+                        <div class="btnDiv" id="http3btn" onclick="selectBtn(3)"><img src="/public/image/http3.png" alt="http3 logo"/></div>
+                    </div>
+                    <div class="descriptiondiv">
+                        <div class="descriptTitle-div">
+                            <h3 id="descript-title"></h3>
+                        </div>
+                        <h4>Tip podatka:</h4>
+                        <p id="tipPodatka"></p>
+                        <img id="layersImg" alt="slojevi"/>
+                        <h4>Prijenos podatka:</h4>
+                        <p id="prijenosPodatka"></p>
+                        <img id="dataTransferImg" alt="prijenos podataka"/>
+                        <h4>Multipleksiranje:</h4>
+                        <p id="multipleks"></p>
+                        <img id="multiplexImg" alt="multipleksiranje"/>
+                        <h4>Zaglavlje:</h4>
+                        <p id="zaglavlje"></p>
+                        <h4>Tip podatka:</h4>
+                        <p id="sigurnost"></p>
+                        <h4>Dodatno:</h4>
+                        <p id="dodatno"></p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </main>
+    <footer>
+        Izradio: Dominik Đurinić @ FER, 2024
+    </footer>
+    <script src="description.js"></script>
+</body>
+</html>
