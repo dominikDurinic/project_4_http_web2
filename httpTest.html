@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image" href="public/image/logo.png" />
     <link rel="stylesheet" type="text/css" href="style/httpTest.css">
+    <link rel="stylesheet" type="text/css" href="style/form.css">
     <link rel="stylesheet" type="text/css" href="style/header.css">
     <link rel="stylesheet" type="text/css" href="style/main.css">
     <link rel="stylesheet" type="text/css" href="style/httpDescript.css">
@@ -15,9 +16,25 @@
     <header>
         <img src="/public/image/logo2.png" alt="logo" class="img-logo"/>
         <h1><span class="color-blue">HTTP</span> <span class="color-white">Test</span></h1>
+        <p>Ocjena: <span id="grade"></span>/5</p>
     </header>
     <main>
         <div class="main-container">
+            <div class="form-div" id="form">
+                <h2>Hvala Vam što ste posjetili našu web stranicu!</h2>
+                <p>Ako ste zadovoljni sadržajem na stranici, voljeli bismo da nas ocjenite.</p>
+                <img src="/public/image/thankyou.png" alt="thank you img"/>
+                <br/>
+                <p><span class="italic-text">Odaberite ocjenu prema Vašem iskustvu korištenja HTTPTest web stranice.</span></p>
+                <div class="btnGrades-div">
+                    <div class="btnGrades" onclick="formResponse(0)">Ne, hvala</div>
+                    <div class="btnGrades" onclick="formResponse(1)">1</div>
+                    <div class="btnGrades" onclick="formResponse(2)">2</div>
+                    <div class="btnGrades" onclick="formResponse(3)">3</div>
+                    <div class="btnGrades" onclick="formResponse(4)">4</div>
+                    <div class="btnGrades" onclick="formResponse(5)">5</div>
+                </div>
+            </div>
             <div class="welcome-div">
                 <h1>HTTP Test</h1>
                 <h2>Dobrodošli u aplikaciju za ispitivanje načina rada i performansi HTTP protokola!</h2>
@@ -102,5 +119,6 @@
         Izradio: Dominik Đurinić @ FER, 2024
     </footer>
     <script src="description.js"></script>
+    <script src="form.js"></script>
 </body>
 </html>
