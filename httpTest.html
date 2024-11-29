@@ -27,8 +27,45 @@
                 <h2>O protokolu</h2>
                 <p><span class="bold-text">HTTP (Hypertext Transfer Protocol)</span> je protokol aplikacijskog sloja u modelu skupa internetskih protokola za distribuirane, suradničke, hipermedijske informacijske sustave.</p>
                 <p>Osnova funkcioniranja se temelji na modelu <span class="bold-text">zahtjev - odgovor</span> između klijenta  i poslužitelja.</p>
+                <div class="img-div">
+                    <img src="/public/image/clientServer.png" id="clientServer-img" alt="client-server model"/>
+                </div>
+                <p>Postoje neke zajedničke informacije koje su općenito prisutne u svim HTTP zahtjevima. Oni su navedeni u nastavku.</p>
+                <ul>
+                    <li>HTTP Version</li>
+                    <li>URL</li>
+                    <li>HTTP Method</li>
+                    <li>HTTP Request Headers</li>
+                    <li>HTTP Body</li>
+                </ul>
+                <p>Najčešće korištene HTTP metode su <span class="bold-text">HTTP GET i HTTP POST</span></p>
+                <div class="img-div">
+                    <img src="/public/image/request.png" id="request-img" alt="request model"/>
+                </div>
+                <p>Postoje razne stvari sadržane u HTTP odgovoru, neke od njih su navedene u nastavku.</p>
+                <ul>
+                    <li>HTTP Status Code</li>
+                    <li>HTTP Headers</li>
+                    <li>HTTP Body</li>
+                </ul>
+                <p>Sljedećih pet zapisa predstavlja analizu statusnih kodova:</p>
+                <ul>
+                    <li>1x Informative</li>
+                    <li>2xx Achievement</li>
+                    <li>3xx Reorientation</li>
+                    <li>4xx Client Mistake</li>
+                    <li>5xx Error on the Server</li>
+                </ul>
+                <div class="img-div">
+                    <img src="/public/image/response.png" id="response-img" alt="response model"/>
+                </div>
                 <p>Također bitno je naglasiti da je ovaj protokol <span class="bold-text">"stateless"</span> odnosno ne čuva stanje i zahtjevi su međusobno nezavisni.</p>
-                <h2>Opis protokola</h2>
+                <p>Sigurnija inačica HTTP protokola naziva se <span class="bold-text">HTTPS (HyperText Transfer Protocol Secure)</span>. Podaci se pri prijenosu kriptiraju i tako sogurnije šalju između klijenta i poslužitelja.</p>
+                <div class="img-div">
+                    <img src="/public/image/https.png" id="https-img" alt="client-server model"/>
+                </div>
+                <br/>
+                <h2>Opis različitih verzija protokola</h2>
                 <p class="italic-text">Pritiskom na pojedinu verziju protokola ispisuju se glavne karakteristike odabrane verzije HTTP protokola.</p>
                 <div class="httpContainer">
                     <div class="http-btns-div">
