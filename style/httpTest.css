@@ -35,3 +35,29 @@ h1,h2,h3,p{
 .blank{
     width: 5px !important;
 }
+
+.logos-div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+}
+
+.img-logo{
+    width: 80px;
+    height: 100px;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.img-logo2{
+    width: 200px;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.img-logo2:hover, .img-logo:hover{
+    opacity: 1;
+}
